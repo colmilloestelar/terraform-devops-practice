@@ -1,0 +1,8 @@
+- name: Setup server
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: print message
+      debug:
+        msg: "Ansible CI executed"
