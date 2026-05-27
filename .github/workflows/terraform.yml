@@ -19,3 +19,6 @@ jobs:
 
       - name: Terraform validate
         run: terraform validate
+
+      - name: Run check script
+        run: bash check.sh
