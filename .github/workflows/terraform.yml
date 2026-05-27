@@ -22,3 +22,9 @@ jobs:
 
       - name: Run check script
         run: bash check.sh
+
+      - name: Run Ansible playbook
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ansible
+          ansible-playbook ansible/playbook.yml
